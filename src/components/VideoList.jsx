@@ -1,13 +1,13 @@
 var VideoList = (props) => (
 
   <div className="video-list media">
-    {window.exampleVideoData.map(video =>
+    {props.videos.map(video =>
       <VideoListEntry video={video} />
     )}
   </div>
 );
 
-// dynamically render each element in window.exampleVideoData
+// dynamically render each element in
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
